@@ -77,6 +77,7 @@ const About = () => {
       title: 'LinkedIn',
     },
   ]
+
   return (
     <Stack
       p={6}
@@ -94,15 +95,17 @@ const About = () => {
       <Text fontSize={'sm'} color={'brand.secondary'}>
         {siteConfig.profile.about}
       </Text>
+
       <Center>
         {socials.map((item) => (
           <Button key={item.title} variant={'outline'} p={2} borderRadius={'full'} border={0}>
-            <CNLink href={item.href} color={'Brand'}>
+            <CNLink href={item.href} color={'brand'}>
               <item.Icon />
             </CNLink>
           </Button>
         ))}
       </Center>
+
       <Flex direction={'column'} gap={4} justifyContent={'space-between'}>
         <Flex justifyContent={'space-between'} gap={2}>
           <Flex direction="column" flex={1}>
@@ -122,14 +125,24 @@ const About = () => {
             </Text>
           </Flex>
         </Flex>
-        <Button borderRadius={'md'}>
-          <IoMdCheckmarkCircleOutline />
-          Hire me
-        </Button>
+
+        {/* ✅ Centered "Hire me" button */}
+        <Center>
+          <CNLink href={siteConfig.contact.emailHref}>
+            <Button
+              borderRadius={'md'}
+              colorScheme="blue"
+            >
+              <IoMdCheckmarkCircleOutline />
+              Hire me
+            </Button>
+          </CNLink>
+        </Center>
       </Flex>
     </Stack>
   )
 }
+
 
 const TechStack = () => {
   const items = [
