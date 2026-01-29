@@ -61,22 +61,22 @@ const About = () => {
     href: string
     title: string
   }[] = [
-    {
-      Icon: FaGithub,
-      href: siteConfig.social.githubHref,
-      title: 'Github',
-    },
-    {
-      Icon: FaXTwitter,
-      href: siteConfig.social.twitterHref,
-      title: 'Twitter',
-    },
-    {
-      Icon: FaLinkedin,
-      href: siteConfig.social.linkedinHref,
-      title: 'LinkedIn',
-    },
-  ]
+      {
+        Icon: FaGithub,
+        href: siteConfig.social.githubHref,
+        title: 'Github',
+      },
+      {
+        Icon: FaXTwitter,
+        href: siteConfig.social.twitterHref,
+        title: 'Twitter',
+      },
+      {
+        Icon: FaLinkedin,
+        href: siteConfig.social.linkedinHref,
+        title: 'LinkedIn',
+      },
+    ]
 
   return (
     <Stack
@@ -99,7 +99,7 @@ const About = () => {
       <Center>
         {socials.map((item) => (
           <Button key={item.title} variant={'outline'} p={2} borderRadius={'full'} border={0}>
-            <CNLink href={item.href} color={'brand'}>
+            <CNLink href={item.href} color={'brand'} target="_blank">
               <item.Icon />
             </CNLink>
           </Button>
@@ -128,7 +128,7 @@ const About = () => {
 
         {/* ✅ Centered "Hire me" button */}
         <Center>
-          <CNLink href={siteConfig.contact.emailHref}>
+          <CNLink href={siteConfig.contact.emailHref} target="_blank">
             <Button
               borderRadius={'md'}
               colorScheme="blue"
@@ -277,6 +277,7 @@ const Contact = () => {
             color={'brand.secondary'}
             _focus={{ boxShadow: 'none' }}
             href={siteConfig.contact.emailHref}
+            target="_blank"
           >
             {siteConfig.contact.email}
           </CNLink>

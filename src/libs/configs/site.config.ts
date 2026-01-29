@@ -2,7 +2,7 @@ export const siteConfig = {
   profile: {
     name: 'Durga Prasad Vulla',
     title: 'Software Engineer',
-    avatar: '?/public/assets/favicon.ico', 
+    avatar: '?/public/assets/favicon.ico',
     location: 'Visakhapatnam, India',
     experience: 'Yet No experience',
     about:
@@ -12,15 +12,15 @@ export const siteConfig = {
   contact: {
     email: 'durgaprasadvulla24@gmail.com',
     phone: '+1234567890',
-emailHref: 'https://mail.google.com/mail/?view=cm&to=durgaprasadvulla24@gmail.com',
+    emailHref: 'https://mail.google.com/mail/?view=cm&to=durgaprasadvulla24@gmail.com',
     phoneHref: 'tel:+1234567890',
   },
   social: {
     githubHandle: '24durgaprasad',
     githubHref: 'https://github.com/24durgaprasad',
-    twitterHandle: 'durgaprasadvulla',
-    twitterHref: 'https://x.com/durgaprasad24',
-    linkedinHandle: 'durgaprasadvulla',
-    linkedinHref: 'https://www.linkedin.com/in/durgaprasad-vulla-428b85231/',
+    twitterHandle: 'buildwithvdp',
+    twitterHref: 'https://x.com/buildwithvdp',
+    linkedinHandle: 'durgaprasad-vulla-858579393',
+    linkedinHref: 'https://www.linkedin.com/in/durgaprasad-vulla-858579393/',
   },
 }
